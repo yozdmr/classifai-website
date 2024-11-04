@@ -2,6 +2,7 @@
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, 'backend.env') });
 
+
 const mongoose = require('mongoose'); 
 
 // Connect to MongoDB using mongoose, not setup with an actual DB 
