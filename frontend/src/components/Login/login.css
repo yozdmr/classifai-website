@@ -1,0 +1,103 @@
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding-top: 125px;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-login {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+#submit-login {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+#title {
+    margin-bottom: 30px;
+}
+
+hr {
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#password-alert {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the children vertically */
+        align-items: center; /* Align children to the center */
+        padding-top: 150px; /* Adjust padding as needed */
+    }
+
+    .left-side,
+    .right-side {
+        flex: none; /* Reset any flex settings */
+        width: 90%; /* Set the width to a percentage of the screen width */
+        justify-content: center;
+        padding: 20px; /* Add padding around the content */
+        margin-bottom: 30px; /* Add space between the stacked items */
+    }
+
+    #login-form {
+        width: 100%; /* Full width of its container */
+    }
+
+    .input-login {
+        width: 100%; /* Full width of its container */
+    }
+
+    #submit-login {
+        width: 100%; /* Full width of the button */
+    }
+
+    .form-group {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .additional-info {
+        display: none; /* Hide additional info to reduce clutter */
+    }
+
+    .learn-more {
+        display: none; /* Hide the learn more button */
+    }
+}
+
